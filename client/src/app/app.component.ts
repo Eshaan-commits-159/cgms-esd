@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cgms';
-  homeimage = 'assets/videos/cgmshome.mp4';
+  
 }
