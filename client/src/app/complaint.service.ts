@@ -12,4 +12,9 @@ export class ComplaintService {
   getComplaints(): Observable<Complaint[]>{
   	return this.http.get<Complaint[]>('http://localhost:3000/api/complaints');
   }
+
+  deleteComplaint(id:any): Observable<Complaint[]>{
+    return this.http.delete<Complaint[]>('http://localhost:3000/api/complaint/' + id);
+  }
+
 }
